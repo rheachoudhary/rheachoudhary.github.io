@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rhea Choudhary</title>
+  <meta name="description" content="Rhea Choudhary — economist. Research, writing, and CV." />
+
+  <!-- Social preview (optional) -->
+  <meta property="og:title" content="Rhea Choudhary" />
+  <meta property="og:description" content="Economist. Research, writing, and CV." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>" />
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1b1b1b;
+      --muted: #666;
+      --rule: #e6e6e6;
+      --accent: #1f5fa8;
+      --accent-soft: #eef4fb;
+      --maxw: 720px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16181c;
+        --fg: #e9e9ea;
+        --muted: #9aa0a6;
+        --rule: #2a2d33;
+        --accent: #7fb2ef;
+        --accent-soft: #1d2530;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Georgia, Cambria, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    h1, h2, h3, nav, .name-title, .links, .label {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Header */
+    header { display: flex; gap: 28px; align-items: flex-start; }
+    .photo {
+      flex: 0 0 auto;
+      width: 118px; height: 118px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--accent-soft);
+      border: 1px solid var(--rule);
+    }
+    .name-title { min-width: 0; }
+    h1 {
+      font-size: 34px;
+      line-height: 1.15;
+      margin: 2px 0 6px;
+      letter-spacing: -0.01em;
+    }
+    .role { font-size: 17px; color: var(--muted); margin: 0 0 4px; }
+    .affil { font-size: 16px; color: var(--muted); margin: 0; }
+
+    /* Link row */
+    .links {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      font-size: 15px;
+    }
+    .links a {
+      display: inline-block;
+      padding: 4px 11px;
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--fg);
+      transition: background .15s, border-color .15s;
+    }
+    .links a:hover { background: var(--accent-soft); border-color: var(--accent); }
+
+    /* Sections */
+    section { margin-top: 44px; }
+    h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 0 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--rule);
+    }
+    p { margin: 0 0 16px; }
+    a { color: var(--accent); }
+    a:hover { color: var(--accent); }
+
+    ul.plain { margin: 0; padding-left: 1.1em; }
+    ul.plain li { margin-bottom: 6px; }
+
+    /* Papers */
+    .paper { margin-bottom: 26px; }
+    .paper .ptitle { font-weight: 600; }
+    .paper .pmeta { color: var(--muted); font-size: 16px; margin: 2px 0 6px; }
+    .paper .plinks { font-size: 15px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+    .paper .plinks a { margin-right: 12px; }
+    .status {
+      display: inline-block;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 2px 8px;
+      border-radius: 4px;
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      font-size: 14px;
+      color: var(--muted);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    }
+
+    @media (max-width: 560px) {
+      .wrap { padding: 40px 20px 72px; }
+      header { flex-direction: column; gap: 18px; }
+      h1 { font-size: 28px; }
+      body { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- ============ HEADER ============ -->
+    <header>
+      <!-- Optional headshot: drop a file named photo.jpg in this folder, or delete this line -->
+      <img class="photo" src="photo.jpg" alt="Rhea Choudhary" onerror="this.style.display='none'" />
+      <div class="name-title">
+        <h1>Rhea Choudhary</h1>
+        <p class="role">PhD student in Economics</p>
+        <p class="affil">University of Chicago</p>
+
+        <nav class="links">
+          <a href="mailto:you@example.com">Email</a>
+          <a href="cv.pdf">CV (PDF)</a>
+          <a href="https://github.com/rheachoudhary">GitHub</a>
+          <a href="https://scholar.google.com/">Google Scholar</a>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am an economist working on [your fields — e.g. labor economics, health
+        economics, and public policy]. My research uses [methods / data — e.g.
+        administrative microdata and quasi-experimental designs] to study [the
+        questions you care about].
+      </p>
+      <p>
+        Before this I [brief background — prior role, degree, or affiliation].
+        You can read more in my <a href="cv.pdf">CV</a>.
+      </p>
+    </section>
+
+    <!-- ============ RESEARCH INTERESTS ============ -->
+    <section id="research">
+      <h2>Research Interests</h2>
+      <ul class="plain">
+        <li>Labor economics</li>
+        <li>Health economics</li>
+        <li>Public and welfare policy</li>
+        <li>Applied microeconometrics</li>
+      </ul>
+    </section>
+
+    <!-- ============ WORKING PAPERS / PUBLICATIONS ============ -->
+    <section id="papers">
+      <h2>Working Papers</h2>
+
+      <div class="paper">
+        <div class="ptitle">Title of your first paper<span class="status">Working paper</span></div>
+        <div class="pmeta">with Coauthor Name · 2026</div>
+        <p style="margin:0 0 6px;">
+          One or two sentences summarizing the question, design, and headline
+          result. Keep it readable for a general-economist audience.
+        </p>
+        <div class="plinks">
+          <a href="#">PDF</a>
+          <a href="#">Abstract</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="ptitle">Title of your second paper</div>
+        <div class="pmeta">Solo-authored · work in progress</div>
+        <p style="margin:0 0 6px;">Short description goes here.</p>
+        <div class="plinks">
+          <a href="#">Draft available on request</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        [Department / building], University of Chicago<br />
+        <a href="mailto:you@example.com">you@example.com</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Rhea Choudhary · Built with GitHub Pages
+    </footer>
+  </div>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
