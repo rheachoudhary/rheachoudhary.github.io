@@ -4,11 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rhea Choudhary</title>
-  <meta name="description" content="Rhea Choudhary — economist. Research, writing, and CV." />
+  <meta name="description" content="Rhea Choudhary — predoctoral researcher at the Becker Friedman Institute, University of Chicago. Research, writing, and CV." />
 
-  <!-- Social preview (optional) -->
   <meta property="og:title" content="Rhea Choudhary" />
-  <meta property="og:description" content="Economist. Research, writing, and CV." />
+  <meta property="og:description" content="Predoctoral researcher at the Becker Friedman Institute, University of Chicago." />
   <meta property="og:type" content="website" />
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>" />
@@ -51,7 +50,7 @@
       padding: 64px 24px 96px;
     }
 
-    h1, h2, h3, nav, .name-title, .links, .label {
+    h1, h2, h3, nav, .name-title, .links, .label, .paper .plinks, footer, .status {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
     }
 
@@ -107,20 +106,19 @@
     }
     p { margin: 0 0 16px; }
     a { color: var(--accent); }
-    a:hover { color: var(--accent); }
 
     ul.plain { margin: 0; padding-left: 1.1em; }
     ul.plain li { margin-bottom: 6px; }
 
-    /* Papers */
+    /* Papers / brainstorms */
     .paper { margin-bottom: 26px; }
     .paper .ptitle { font-weight: 600; }
     .paper .pmeta { color: var(--muted); font-size: 16px; margin: 2px 0 6px; }
-    .paper .plinks { font-size: 15px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
-    .paper .plinks a { margin-right: 12px; }
+    .paper .pdesc { margin: 0 0 8px; }
+    .paper .plinks { font-size: 15px; }
+    .paper .plinks a { margin-right: 14px; }
     .status {
       display: inline-block;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -138,7 +136,6 @@
       border-top: 1px solid var(--rule);
       font-size: 14px;
       color: var(--muted);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
     }
 
     @media (max-width: 560px) {
@@ -154,19 +151,21 @@
 
     <!-- ============ HEADER ============ -->
     <header>
-      <!-- Optional headshot: drop a file named photo.jpg in this folder, or delete this line -->
+      <!-- Optional headshot: drop a square file named photo.jpg in this folder, or delete this line -->
       <img class="photo" src="photo.jpg" alt="Rhea Choudhary" onerror="this.style.display='none'" />
       <div class="name-title">
         <h1>Rhea Choudhary</h1>
-        <p class="role">PhD student in Economics</p>
-        <p class="affil">University of Chicago</p>
+        <p class="role">Predoctoral Researcher</p>
+        <p class="affil">Becker Friedman Institute, University of Chicago</p>
 
         <nav class="links">
-          <a href="mailto:you@example.com">Email</a>
-          <a href="cv.pdf">CV (PDF)</a>
-          <a href="https://github.com/rheachoudhary">GitHub</a>
-          <a href="https://scholar.google.com/">Google Scholar</a>
-          <a href="https://www.linkedin.com/">LinkedIn</a>
+          <a href="mailto:rheac@uchicago.edu">Email</a>
+          <a href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          <a href="https://github.com/rheachoudhary" target="_blank" rel="noopener">GitHub</a>
+          <!-- Add if you want them:
+          <a href="PASTE_SCHOLAR_URL" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="PASTE_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
+          -->
         </nav>
       </div>
     </header>
@@ -175,66 +174,89 @@
     <section id="about">
       <h2>About</h2>
       <p>
-        I am an economist working on [your fields — e.g. labor economics, health
-        economics, and public policy]. My research uses [methods / data — e.g.
-        administrative microdata and quasi-experimental designs] to study [the
-        questions you care about].
+        I am a predoctoral researcher at the Becker Friedman Institute at the
+        University of Chicago, working with Manasi Deshpande. Prior to this, I was
+        an economist at the Reserve Bank of Australia (Australia's equivalent of
+        the Federal Reserve). You can find my CV
+        <a href="cv.pdf" target="_blank" rel="noopener">here</a>.
       </p>
       <p>
-        Before this I [brief background — prior role, degree, or affiliation].
-        You can read more in my <a href="cv.pdf">CV</a>.
+        My research interests span monetary economics and central banking,
+        household finance, and labour and public economics.
       </p>
     </section>
 
-    <!-- ============ RESEARCH INTERESTS ============ -->
+    <!-- ============ RESEARCH ============ -->
     <section id="research">
-      <h2>Research Interests</h2>
-      <ul class="plain">
-        <li>Labor economics</li>
-        <li>Health economics</li>
-        <li>Public and welfare policy</li>
-        <li>Applied microeconometrics</li>
-      </ul>
+      <h2>Research</h2>
+
+      <div class="paper">
+        <div class="ptitle">
+          Analysing the Spillover Effects of the South African Reserve Bank's Bond Purchase Programme
+        </div>
+        <div class="pmeta">
+          South African Reserve Bank Working Paper Series, WP/22/04 (2022)
+        </div>
+        <div class="plinks">
+          <a href="https://www.resbank.co.za/content/dam/sarb/publications/working-papers/2022/WP%202204.pdf" target="_blank" rel="noopener">PDF</a>
+          <a href="https://www.resbank.co.za/en/home/publications/publication-detail-pages/working-papers/2022/AnalysingthespillovereffectsoftheSouthAfricanReserveBanksbondpurchaseprogramme" target="_blank" rel="noopener">SARB page</a>
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="ptitle">
+          Estimating Household Valuations for Offline Digital Money<span class="status">Forthcoming</span>
+        </div>
+        <div class="pmeta">
+          with C. Day and A. Gorajek · RBA Research Discussion Paper
+        </div>
+      </div>
     </section>
 
-    <!-- ============ WORKING PAPERS / PUBLICATIONS ============ -->
-    <section id="papers">
-      <h2>Working Papers</h2>
+    <!-- ============ RESEARCH BRAINSTORMS ============ -->
+    <section id="brainstorms">
+      <h2>Research Brainstorms</h2>
+      <p style="color:var(--muted); font-size:16px; margin-top:-4px;">
+        Early-stage ideas and research proposals. Comments and reactions welcome.
+      </p>
 
       <div class="paper">
-        <div class="ptitle">Title of your first paper<span class="status">Working paper</span></div>
-        <div class="pmeta">with Coauthor Name · 2026</div>
-        <p style="margin:0 0 6px;">
-          One or two sentences summarizing the question, design, and headline
-          result. Keep it readable for a general-economist audience.
+        <div class="ptitle">
+          How Should Central Banks Communicate with Households During Periods of Knightian Uncertainty?
+        </div>
+        <div class="pmeta">2026</div>
+        <p class="pdesc">
+          A proposal for a quasi-experimental survey of US households that isolates
+          how the macroeconomic environment shapes the way households interpret
+          central bank communication, and extends the treatment space beyond
+          forward guidance to a broader suite of imprecise communication styles.
         </p>
         <div class="plinks">
-          <a href="#">PDF</a>
-          <a href="#">Abstract</a>
+          <a href="central-bank-communication.pdf" target="_blank" rel="noopener">Note (PDF)</a>
         </div>
       </div>
 
+      <!-- To add another brainstorm, copy this block and edit it:
       <div class="paper">
-        <div class="ptitle">Title of your second paper</div>
-        <div class="pmeta">Solo-authored · work in progress</div>
-        <p style="margin:0 0 6px;">Short description goes here.</p>
-        <div class="plinks">
-          <a href="#">Draft available on request</a>
-        </div>
+        <div class="ptitle">Title of the idea</div>
+        <div class="pmeta">2026</div>
+        <p class="pdesc">One or two sentences describing the idea.</p>
+        <div class="plinks"><a href="file.pdf" target="_blank" rel="noopener">Note (PDF)</a></div>
       </div>
+      -->
     </section>
 
     <!-- ============ CONTACT ============ -->
     <section id="contact">
       <h2>Contact</h2>
       <p>
-        [Department / building], University of Chicago<br />
-        <a href="mailto:you@example.com">you@example.com</a>
+        Becker Friedman Institute, University of Chicago<br />
+        <a href="mailto:rheac@uchicago.edu">rheac@uchicago.edu</a>
       </p>
     </section>
 
     <footer>
-      © <span id="year"></span> Rhea Choudhary · Built with GitHub Pages
+      © <span id="year"></span> Rhea Choudhary
     </footer>
   </div>
 
